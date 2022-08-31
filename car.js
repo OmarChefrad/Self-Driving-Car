@@ -6,15 +6,18 @@ class Car {
     this.height = height
 
     this.speed = 0
-    this.acceleration = 0.225
-    this.maxSpeed = 3
-    this.friction = 0.02
+    this.acceleration = 0.1
+    this.maxSpeed = 2
+    this.friction = 0.04
     this.angle = 0
 
     this.controls = new Controls()
   }
 
   update() {
+    this.#move()
+  }
+  #move() {
     if (this.controls.forward) {
       this.speed += this.acceleration
     }
@@ -43,10 +46,10 @@ class Car {
       const flip = this.speed > 0 ? 1 : -1
 
       if (this.controls.left) {
-        this.angle += 0.01 * flip
+        this.angle += 0.0075 * flip
       }
       if (this.controls.right) {
-        this.angle -= 0.01 * flip
+        this.angle -= 0.0075 * flip
       }
     }
     this.x -= Math.sin(this.angle) * this.speed
