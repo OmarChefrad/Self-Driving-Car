@@ -4,12 +4,12 @@ body {
   text-align: center;
   background: #c31432; /* fallback for old brows /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
-    to right,
-    #240b36,
-    #1457c3
+    45deg,
+    #360b0b,
+    #c31414
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 #myCanvas {
-  background: linear-gradient(#333333, #777777);
+  background: linear-gradient(#242424, #777777);
 }

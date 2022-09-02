@@ -68,8 +68,8 @@ class Sensor {
       }
 
       ctx.beginPath()
-      ctx.lineWidth = 3
-      ctx.strokeStyle = "green"
+      ctx.lineWidth = 1
+      ctx.strokeStyle = "yellow"
       ctx.moveTo(this.rays[i][0].x, this.rays[i][0].y)
       ctx.lineTo(end.x, end.y)
       ctx.stroke()
