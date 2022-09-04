@@ -16,7 +16,7 @@ class Car {
     this.speed = 0
     this.acceleration = 0.125
     this.maxSpeed = maxSpeed
-    this.friction = 0.03
+    this.friction = 0.05
     this.angle = 0
     this.damaged = false
 
