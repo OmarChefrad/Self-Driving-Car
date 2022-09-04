@@ -52,9 +52,12 @@ class Visualizer {
       ctx.lineWidth = 2
       ctx.arc(x, top, nodeRadius * 0.8, 0, Math.PI * 2)
       ctx.strokeStyle = getRGBA(biases[i])
+      ctx.setLineDash([3, 3])
       ctx.stroke()
+      ctx.setLineDash([])
     }
   }
+
   static #getNodeX(nodes, index, left, right) {
     return lerp(
       left,
